@@ -1,0 +1,57 @@
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prova1</title>
+
+    <body>
+        <header style="text-align: center;">
+            <h1>LISTA DE COMPRAS</h1>
+        </header>
+
+        <nav>
+
+            <a onclick="toggleSubmenu()">Minha conta</a>
+    
+            <div class="submenu" id="submenu">
+    
+                <a href="#">Ver carrinho</a>
+                    
+                <a href="#">Lista de desejos</a>
+    
+                <a href="#">Configurações</a>
+    
+                <a href="login.html">SAIR</a>
+    
+            </div>
+
+            <a onclick="toggleSubmenu2()">Categorias</a>
+
+            <div class="submenu" id="submenu2">
+    
+                <a href="#">Placas de vídeo</a>
+                    
+                <a href="#">Processadores</a>
+    
+                <a href="#">Memória RAM</a>
+    
+                <a href="#">Armazenamento</a>
+    
+            </div>
+    
+        </nav>
+    </body>
+
+    <script>
+        function toggleSubmenu() {
+            const submenu = document.getElementById("submenu");
+            submenu.classList.toggle("active");
+        }
+
+        function toggleSubmenu2() {
+            const submenu2 = document.getElementById("submenu2");
+            submenu2.classList.toggle("active");
+        }
+    </script>
+
+</html>
